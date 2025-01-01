@@ -1,3 +1,4 @@
+import 'package:adaptive_responsive/widgets/gridview_widget.dart';
 import 'package:adaptive_responsive/widgets/listview_widget.dart';
 import 'package:adaptive_responsive/widgets/navigation_bar_widget.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,11 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       body: SafeArea(
         child: <Widget>[
-          const ListviewWidget(),
-          Container(
-            color: Colors.blue,
+          const ListviewWidget(
+            totalItem: 6,
+          ),
+          const GridviewWidget(
+            itemCount: 12,
           ),
           Container(
             color: Colors.redAccent,
