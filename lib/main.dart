@@ -1,4 +1,5 @@
-import 'package:adaptive_responsive/features/homepage.dart';
+// import 'package:adaptive_responsive/features/homepage.dart';
+import 'package:adaptive_responsive/features/navigationpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Adaptive & Responsive',
-      home: Homepage(),
+      // home: Homepage(),
+
+      // Cara membuat Navigation yang responsive
+      home: Navigationpage(),
     );
   }
 }
